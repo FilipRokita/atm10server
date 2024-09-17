@@ -6,25 +6,28 @@ This guide explains how to run a Minecraft server for "All the Mods 10" using Do
 **Disclaimer:** This guide is tested with version `All The Mods 10-0.52` on `Ubuntu Server 22.04`. Other versions may not work as expected.
 
 ## Prerequisites
-- Docker and Docker Compose installed on your server.
+- Git, Docker and Docker Compose installed on your server.
 - Basic familiarity with Docker and command-line interfaces.
 - An account with playit.gg.
 
 ## Setup
 
-1. **Download Server Files**
+1. **Clone the Repository**
+   - To clone the repository, run: `git clone https://github.com/FilipRokita/atm10srv`
+
+2. **Download Server Files**
    - Download the "All the Mods 10" server files from [CurseForge](https://www.curseforge.com/minecraft/modpacks/all-the-mods-10).
 
-2. **Place Server Files**
+3. **Place Server Files**
    - Move the downloaded `.zip` file to the `modpacks` folder in your project directory.
 
-3. **Create a playit.gg Account**
+4. **Create a playit.gg Account**
    - Sign up at [playit.gg](https://playit.gg) if you don’t already have an account.
 
-4. **Set Up Docker-Based Agent**
+5. **Set Up Docker-Based Agent**
    - Follow the instructions on playit.gg to configure a Docker-based agent. Obtain your secret key and create a tunnel. This will allow external connections to your Minecraft server.
 
-5. **Configure Docker Compose**
+6. **Configure Docker Compose**
    - Add your playit.gg secret key to the `docker-compose.yaml` file under the `playit` service's environment section. Replace `<INSERT PLAYIT.GG SECRET KEY HERE>` with your actual secret key.
    - Replace `<INSERT SERVER FILES .ZIP FILE NAME HERE>` with the actual name of the server files `.zip` file you downloaded e.g. `Server-Files-0.52.zip`.
 
@@ -35,12 +38,14 @@ To start the server in detached mode, run:
 ```bash
 docker compose up -d
 ```
+**Note:** You must run this command inside the directory where the docker-compose.yaml file is located.
 
 ### Stop the Server
 To stop the server and remove the containers, run:
 ```bash
 docker compose down
 ```
+**Note:** You must run this command inside the directory where the docker-compose.yaml file is located.
 
 ### Access Minecraft Server Console
 To access the Minecraft server's CLI, run:
