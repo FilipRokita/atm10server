@@ -76,4 +76,4 @@ If you encounter any issues or have questions, consider consulting the documenta
 **Date:** 2024-09-17  
 **Author:** Filip Rokita
 
-Feel free to adjust the commands or configurations as needed.
+*Feel free to adjust the commands or configurations as needed.*
