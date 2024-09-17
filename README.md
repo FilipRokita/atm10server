@@ -26,6 +26,7 @@ This guide explains how to run a Minecraft server for "All the Mods 10" using Do
 
 5. **Configure Docker Compose**
    - Add your playit.gg secret key to the `docker-compose.yaml` file under the `playit` service's environment section. Replace `<INSERT PLAYIT.GG SECRET KEY HERE>` with your actual secret key.
+   - Replace `<INSERT SERVER FILES .ZIP FILE NAME HERE>` with the actual name of the server files `.zip` file you downloaded e.g. `Server-Files-0.52.zip`.
 
 ## Getting Started
 
