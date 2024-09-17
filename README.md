@@ -1,4 +1,4 @@
-# All the Mods 10 Server and playit.gg in Docker
+# Minecraft All the Mods 10 Server and playit.gg in Docker
 
 ## Overview
 This guide explains how to run a Minecraft server for "All the Mods 10" using Docker. It also includes setup instructions for integrating a playit.gg tunnel to allow you and your friends to connect easily.
