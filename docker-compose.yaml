@@ -1,0 +1,19 @@
+services:
+  mc:
+    stdin_open: true
+    tty: true
+    image: itzg/minecraft-server
+    volumes:
+    - ./modpacks:/modpacks:ro
+    - ./data:/data
+    environment:
+      EULA: "true"
+      TYPE: CURSEFORGE
+      CF_SERVER_MOD: /modpacks/Server-Files-0.52.zip
+    ports:
+      - "25565:25565"
+  playit:
+    image: ghcr.io/playit-cloud/playit-agent:0.15
+    network_mode: host
+    environment:
+    - SECRET_KEY=<INSERT PLAYIT.GG SECRET KEY HERE>
