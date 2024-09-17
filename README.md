@@ -6,7 +6,7 @@ This guide explains how to run a Minecraft server for "All the Mods 10" using Do
 **Disclaimer:** This guide is tested with version `All The Mods 10-0.52` on `Ubuntu Server 22.04`. Other versions may not work as expected.
 
 ## Prerequisites
-- Git, Docker and Docker Compose installed on your server.
+- Git, Docker and Docker Compose installed on your server/machine.
 - Basic familiarity with Docker and command-line interfaces.
 - An account with playit.gg.
 
