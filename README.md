@@ -15,7 +15,8 @@ This guide explains how to run a Minecraft server for "All the Mods 10" using Do
 ## Setup
 
 1. **Clone the Repository**
-   - To clone the repository, run: `git clone https://github.com/FilipRokita/atm10server`
+   - To clone the repository, run: `git clone https://github.com/FilipRokita/minecraft-atm10-playitgg-docker`
+   - To rename the folder to something shorter, run: `mv minecraft-atm10-playitgg-docker atm10srv`
 
 2. **Download Server Files**
    - Download the "All the Mods 10" server files from [CurseForge](https://www.curseforge.com/minecraft/modpacks/all-the-mods-10).
@@ -52,7 +53,7 @@ docker compose down
 ### Access Minecraft Server Console
 To access the Minecraft server's CLI, run:
 ```bash
-docker attach atm10server-mc-1
+docker attach atm10srv-mc-1
 ```
 
 ### Detach from Minecraft Server Console
@@ -61,9 +62,9 @@ To safely detach from the CLI without stopping the server, press `[Ctrl] + [P]` 
 ## Uninstall
 
 ### Remove Folder
-To remove the `atm10server` folder and all its contents, run:
+To remove the `atm10srv` folder and all its contents, run:
 ```bash
-rm -rf atm10server
+rm -rf atm10srv
 ```
 
 ### Clear Unused Docker Resources
