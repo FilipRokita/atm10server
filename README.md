@@ -1,9 +1,11 @@
 # All the Mods 10 Server and playit.gg in Docker
 
 ## Overview
-This guide explains how to run a Minecraft server for "All the Mods 10" using Docker. It also includes setup instructions for integrating a playit.gg tunnel to allow you and your friends to connect easily. **This configuration should also work with any CurseForge modpack by adjusting the server files accordingly.**
+This guide explains how to run a Minecraft server for "All the Mods 10" using Docker. It also includes setup instructions for integrating a playit.gg tunnel to allow you and your friends to connect easily.
 
-**Disclaimer:** This guide is tested with version `All The Mods 10-0.52` on `Ubuntu Server 22.04`. Other versions may not work as expected.
+**This configuration should also work with any CurseForge modpack by adjusting the server files accordingly.**
+
+**Disclaimer:** Tested with `All The Mods 10-0.52` on `Ubuntu Server 22.04`.
 
 ## Prerequisites
 - Git, Docker and Docker Compose installed on your server/machine.
